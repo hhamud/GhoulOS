@@ -6,7 +6,9 @@ authors= ["Hamza Hamud"]
 
 [dependencies]
 bootloader = "0.9.8"
+volatile = "0.2.6"
+spin = "0.5.2"
 
-[unstable]
-build-std-features = ["compiler-builtins-mem"]
-build-std = ["core", "compiler_builtins"]
+[dependencies.lazy_static]
+version = "1.0"
+features = ["spin_no_std"]
